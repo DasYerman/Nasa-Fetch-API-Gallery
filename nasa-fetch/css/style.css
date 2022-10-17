@@ -1,0 +1,143 @@
+ 
+#buscador{
+  align-self: auto;
+  display: block;
+}
+
+#contenedor{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;  
+}
+.container{
+  display: flex;
+  flex-direction: row;  
+}
+.nasa-container{
+  display: flex;
+  flex-direction: column;
+  width: 30%; 
+  border: 1px solid rgb(165, 164, 164);
+  border-radius: 6px;
+  height: 50vh;
+  margin-bottom: 10px;
+}
+
+img{
+  width: 100%;
+  height: 45%;
+}
+
+#nasa-d-container{
+  overflow: auto;
+  height: 150px;
+}
+
+@media (max-width:749px){
+  #buscador{
+    align-self: auto;
+    display: block;
+  }
+
+  #contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+  .nasa-container{
+      display: flex;
+      flex-direction: column;
+      width: 65%; 
+      border: 1px solid rgb(165, 164, 164);
+      border-radius: 6px;
+      height: 90vh;
+      margin-bottom: 10px;
+    }
+    
+  img{
+      width: 100%;
+      height: 45%;
+    }
+    
+  #nasa-d-container{
+      overflow: auto;
+      height: 150px;
+    }  
+
+}
+
+@media (min-width:750px) and (max-width: 999px){
+    #contenedor{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+  .nasa-container{
+      display: flex;
+      flex-direction: column;
+      width: 45%; 
+      border: 1px solid rgb(165, 164, 164);
+      border-radius: 6px;
+      height: 90vh;
+      margin-bottom: 10px;
+    }
+    
+  img{
+      width: 100%;
+      height: 45%;
+    }
+    
+  #nasa-d-container{
+      overflow: auto;
+      height: 150px;
+    }  
+
+}
+ /*buscador*/
+.text-center{
+  display: flex;
+  height: 30%;
+}
+
+.col-lg-6{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.fw-light{
+  width: 55%;
+  align-self: center;  
+  text-align: center;
+}
+
+.form-control{
+  width: 30%;
+  height: 5vh
+}
+
+.btn-primary{
+  margin: 5px;
+  text-align: center;
+  width: 15%;
+  height: 6vh;
+  background-color: rgb(82, 128, 255);
+  border: solid 1px lightblue;
+  border-radius: 10px;
+  color: aliceblue;
+}
